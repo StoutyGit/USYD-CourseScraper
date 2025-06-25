@@ -1,13 +1,31 @@
 <!<!DOCTYPE html>
 <hmtl lang="en">
 <head>
+    <link rel="stylesheet" href="styles/main.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE-edge">
     <meta name="viewport" content="width=device-width, intial-scale=1.0">
     <title>USYD Subject Dependency Scraper</title>
 </head>
 <body>
-    <h1>This is a heading</h1>
+    <div id="input">
+        <h2>Input</h2>
+        <div id="search-form">
+            <label for="subject-code">Subject Code:</label>
+            <input type="text" id="subject-code" placeholder="e.g. COMP2123">
+            <button id="scrape-button">Search Prerequisites</button>
+            <script src="scripts/main.js"></script>
+        </div>
+        <div id="JSON Import/Export">
+            <label for="json-input">Import JSON:</label>
+            <input type="file" id="json-input" accept=".json">
+            <button id="export-json">Export JSON</button>
+        </div>
+    </div>
+    <div id="output">
+        <h2>Output</h2>
+        <p id="output-text">The scraped data will appear here in tree format.</p>
+    </div>
 </body>
 </html>
 
